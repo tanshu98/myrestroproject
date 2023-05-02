@@ -1,0 +1,52 @@
+{
+  "user": [
+    {
+      "name": "Tanshu Allewar",
+      "email": "tanshuallewar98@gmail.com",
+      "password": "Tanshu@12345",
+      "id": 1
+    },
+    {
+      "name": "Akshay Allewar",
+      "email": "jjakshay@gmail.com",
+      "password": "Akshay@93",
+      "id": 2
+    },
+    {
+      "name": "Sakshi",
+      "email": "sakshi@gmail.com",
+      "password": "Sakshi@12345",
+      "id": 3
+    },
+    {
+      "name": "Sakshi",
+      "email": "sakshi@gmail.com",
+      "password": "Sakshai@12345",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "abc123",
+      "id": 6
+    },
+    {
+      "name": "Salena Gomez",
+      "email": "salenagomez@gmail.com",
+      "password": "Salena@12345",
+      "id": 7
+    },
+    {
+      "name": "qwerty",
+      "email": "qwerty@gmail.com",
+      "password": "qwerty@12345",
+      "id": 8
+    }
+  ]
+}
