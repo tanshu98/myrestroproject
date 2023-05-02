@@ -38,6 +38,7 @@ export default {
       }
       // Now we will store the values of user who have signed in ..in our local storage..
       localStorage.setItem("user-info", JSON.stringify(result.data));
+      // Local storage requires data in the form of string so we are converting our result.data in string format.
     },
   },
 };
