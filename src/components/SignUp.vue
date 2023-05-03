@@ -6,6 +6,9 @@
     <input type="email" placeholder="Enter Email" v-model="email" />
     <input type="password" placeholder="Enter Password" v-model="password" />
     <button v-on:click="signUp">Sign Up</button>
+    <p>
+      <router-link to="/login">Login</router-link>
+    </p>
   </div>
 </template>
 <!-- v-model : this means that if our data changes, our input will too, and if our input changes, our data changes too. -->
@@ -34,12 +37,23 @@ export default {
       // The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource.
       // The common use case of this status code is as the result of a POST request.
       if (result.status === 201) {
-        alert("Sign Up Done");
+        // Now we will store the values of user who have signed in ..in our local storage..
+        localStorage.setItem("user-info", JSON.stringify(result.data));
+        // Local storage requires data in the form of string so we are converting our result.data in string format.
+        // So on correct sign up..we will redirect our user to our home page
+        this.$router.push({ name: "Home" });
       }
-      // Now we will store the values of user who have signed in ..in our local storage..
-      localStorage.setItem("user-info", JSON.stringify(result.data));
-      // Local storage requires data in the form of string so we are converting our result.data in string format.
     },
+  },
+  // Now here next thing we have to do is add a condition..so that once the user signs in our page..then it will only redirect to the Home Page..it must not be able to go to the sign up page..
+  // So for this what we do is..we create a lifecycle hook called Mounted..and in that one..we add a condition that if..there is a value in our local storage..(i.e there are user credentials)..it will only redirect to the Home Page
+  mounted() {
+    // Get item of local storage
+    let user = localStorage.getItem("user-info");
+    // If the user's credentials are stored in local storage..we redirect them into our home page
+    if (user) {
+      this.$router.push({ name: "Home" });
+    }
   },
 };
 </script>
@@ -64,3 +78,5 @@ export default {
   cursor: pointer;
 }
 </style>
+
+<!-- the mounted hook can be used to run code after the component has finished the initial rendering and created the DOM nodes: -->

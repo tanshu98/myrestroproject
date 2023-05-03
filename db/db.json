@@ -47,6 +47,48 @@
       "email": "qwerty@gmail.com",
       "password": "qwerty@12345",
       "id": 8
+    },
+    {
+      "name": "Shubham",
+      "email": "shubhamkelzare@gmail.com",
+      "password": "shubham",
+      "id": 9
+    },
+    {
+      "name": "Shrunkhala",
+      "email": "shrunkala@gmail.com",
+      "password": "shrukhala",
+      "id": 10
+    },
+    {
+      "name": "Justin",
+      "email": "justin@gmail.com",
+      "password": "justin",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "name": "Kathy ",
+      "email": "kathy@gmail.com",
+      "password": "kathy",
+      "id": 13
+    },
+    {
+      "name": "bob",
+      "email": "bob@123",
+      "password": "bob",
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
     }
   ]
 }
